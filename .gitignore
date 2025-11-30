@@ -1,0 +1,25 @@
+# Node
+node_modules/
+.env
+.env.*
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Prisma
+prisma/dev.db
+prisma/seed.lock
+prisma/migrations/*/migration.sql
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# VSCode
+.vscode/
