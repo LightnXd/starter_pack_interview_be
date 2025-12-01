@@ -1,10 +1,10 @@
-# Backend Local Setup Guide & API Documentation
+# Frontend & Backend Local Setup Guide & API Documentation
 
-## Local Setup Guide
+## Frontend Local Setup Guide
 
 ### 1. Clone the Repository
 ```
-git clone https://github.com/ptpl-source/starter-pack-interview-be.git
+git clone https://github.com/LightnXd/starter_pack_interview_fe.git
 ```
 
 ### 2. Install Dependencies
@@ -15,15 +15,41 @@ yarn install
 ```
 
 ### 3. Configure Environment Variables
-- Create a `.env` file in the backend directory and add the following:
+- Create a `.env` file in the root directory and add the following:
 
 ```env
-DATABASE_URL=your_postgres_/_prisma_url
+VITE_SERVER_URL=Use backend port default 3000 or use vercel deployemnet https://starter-pack-interview-be-nine.vercel.app
+
+```
+
+### 4. Start the Server
+```
+npm run dev
+```
+
+## Backend Local Setup Guide
+
+### 1. Clone the Repository
+```
+git clone https://github.com/LightnXd/starter_pack_interview_be.git
+```
+
+### 2. Install Dependencies
+```
+npm install
+# or
+yarn install
+```
+
+### 3. Configure Environment Variables
+- Create a `.env` file in the root directory and add the following:
+
+```env
+DATABASE_URL=your_postgres_/_prisma_url (can use postgres://f45064b507c916a00538ae4401700c944c77b988a791cd6ba5f3f81c0b66052b:sk_kGGv50nQ-2G0kW67AJdRH@db.prisma.io:5432/postgres?sslmode=require for deployed prisma database)
 JWT_SECRET=your_jwt_secret
 PORT=3000
 
 ```
-
 
 ### 4. Run Database Migrations
 ```
